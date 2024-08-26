@@ -12,12 +12,12 @@ dotenv.config({});
 
 const app = express();
 
-// app.get("/home", (req, res)=>{
-//     return res.status(200).json({
-//         message: "It is a homapage",
-//         success: true
-//     })
-// })
+app.get("/home", (req, res)=>{
+    return res.status(200).json({
+        message: "It is a homapage",
+        success: true
+    })
+})
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));

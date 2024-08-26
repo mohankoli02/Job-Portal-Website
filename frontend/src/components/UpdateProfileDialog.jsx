@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react'
 import { Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle } from './ui/dialog'
 import { Label } from './ui/label'
@@ -136,7 +135,7 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
                                     id="file"
                                     name="file"
                                     type="file"
-                                    accept="image/*"
+                                    accept="application/pdf"
                                     onChange={fileChangeHandler}
                                     className="col-span-3"
                                 />

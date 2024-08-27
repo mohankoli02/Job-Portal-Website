@@ -34,7 +34,7 @@ app.use("/api/v1/company", companyRoute);
 app.use("/api/v1/job", jobRoute);
 app.use("/api/v1/application", applicationRoute);
 
-const PORT = process.env.Port;
+const PORT = process.env.PORT;
 
 app.listen(PORT, ()=>{
     console.log(`Server running at port ${PORT}`);

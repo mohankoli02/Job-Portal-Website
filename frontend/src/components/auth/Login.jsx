@@ -12,6 +12,7 @@ import { toast} from "sonner";
 import { useDispatch, useSelector } from "react-redux";
 import { setLoading, setUser } from "@/redux/authSlice";
 import { Loader2 } from "lucide-react";
+import Footer from "../shared/Footer";
 
 function Login() {
   const [input, setInput] = useState({
@@ -125,6 +126,7 @@ function Login() {
           <span className="text-sm">Don't have an account?{" "}<Link to="/signup" className="text-blue-600">Signup</Link></span>
         </form>
       </div>
+      <Footer></Footer>
     </div>
   );
 }

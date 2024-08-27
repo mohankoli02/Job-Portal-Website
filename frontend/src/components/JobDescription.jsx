@@ -20,6 +20,7 @@ import { setSingleJob } from '@/redux/jobSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import { toast } from 'sonner';
 import Navbar from './shared/Navbar';
+import Footer from './shared/Footer';
 
 const JobDescription = () => {
     const {singleJob} = useSelector(store => store.job);
@@ -92,6 +93,7 @@ const JobDescription = () => {
                 <h1 className='font-bold my-1'>Total Applicants: <span className='pl-4 font-normal text-gray-800'>{singleJob?.applications?.length}</span></h1>
                 <h1 className='font-bold my-1'>Posted Date: <span className='pl-4 font-normal text-gray-800'>{singleJob?.createdAt.split("T")[0]}</span></h1>
             </div>
+            <Footer></Footer>
         </div>
     )
 }
